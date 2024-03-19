@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AI-StopMotion</string>
+    <string name="sensitivity_preset">3.0</string>
+    <string name="FPS_preset">10</string>
+    <string name="camera_emoji">📷</string>
+    <string name="recording_emoji">📸</string>
+    <string name="plus_emoji">➕</string>
+    <string name="gear_emoji">⚙️</string>
+    <string name="disk_emoji">💾</string>
+    <string name="cross_emoji">❌</string>
+</resources>

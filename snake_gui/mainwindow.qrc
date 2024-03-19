@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/results.txt</file>
+        <file>Resources/game_music.wav</file>
+        <file>Resources/game_music.mp3</file>
+        <file>Resources/body.png</file>
+        <file>Resources/food.png</file>
+        <file>Resources/head.png</file>
+        <file>Resources/logo.png</file>
+        <file>Resources/tail.png</file>
+    </qresource>
+</RCC>

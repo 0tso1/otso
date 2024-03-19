@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/PreferenceScreen">
+
+    <PreferenceCategory android:title="Scene settings">
+        <EditTextPreference
+            android:key="change_threshold"
+            android:title="Change Threshold"
+            android:summary="This variable serves as a threshold for detecting when a change in the scene is significant enough to trigger a wait for the scene to return to its previous state."
+            android:defaultValue="3.0"
+            android:inputType="numberDecimal"
+            />
+        <EditTextPreference
+            android:key="image_threshold"
+            android:title="Normality Threshold"
+            android:summary="This variable controls the threshold for determining when the scene is back to the previous state."
+            android:defaultValue="3.0"
+            android:inputType="numberDecimal" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Video Settings">
+        <EditTextPreference
+            android:key="video_fps"
+            android:title="Video FPS"
+            android:summary="Changes the output video framerate."
+            android:defaultValue="15"
+            android:inputType="number" />
+    </PreferenceCategory>
+</PreferenceScreen>

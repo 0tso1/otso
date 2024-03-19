@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@id/view"/>
+
+    <Button
+        android:id="@+id/imageCaptureButton"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:background="@drawable/round_button_background"
+        android:text="@string/camera_emoji"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        android:paddingBottom="12sp"
+        android:elevation="200sp"/>
+
+    <Button
+        android:id="@+id/addImagesButton"
+        android:layout_width="70sp"
+        android:layout_height="50sp"
+        android:layout_margin="1sp"
+        android:background="@drawable/rounded_bg"
+        android:elevation="0dp"
+        android:text="@string/plus_emoji"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:elevation="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewFinder"
+        app:layout_constraintVertical_bias="0.964"
+        tools:listitem="@layout/recycler_view_card" />
+
+    <FrameLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10sp"
+        android:background="@color/boring_gray"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="155sp"
+        android:layout_weight="2"
+        android:background="@color/dark_gray"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="20sp">
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:elevation="0sp"
+            android:text="@string/gear_emoji"
+            android:textSize="20sp"
+            android:layout_margin="1sp"/>
+
+        <TextView
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="3"
+            android:elevation="5sp"/>
+
+        <Button
+            android:id="@+id/createVideoButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_bg"
+            android:elevation="0dp"
+            android:text="@string/disk_emoji"
+            android:textSize="20sp"
+            android:layout_margin="1sp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
