@@ -4,17 +4,23 @@ The projects below are newer and were built with the help of AI tools (AI-assist
 
 ### Rizztikko (2026) – [rizztikko.fi](https://rizztikko.fi)
 
+![Rizztikko UI](docs/images/img_11-Rizztikko_UI.webp)
+
 A free daily mini crossword in Finnish. A new puzzle is published every morning, no registration is needed, and it works on both phones and computers. Past puzzles are available in the archive.
 
 **Background:** I wanted a Finnish daily crossword that feels current and is aimed at younger solvers. The grid is filled by a deterministic backtracking solver (Python) that uses a word list built from the Kotus contemporary Finnish word list and word-frequency data, so the answers stay common, valid Finnish words. An LLM is used only where language skill matters: suggesting theme words from the day's news and pop-culture feeds, writing clue candidates and scoring them. Theme words go through a three-layer sensitivity filter that keeps out topics such as deaths, accidents and crimes. The project was developed step by step with AI assistance, and the design decisions are documented along the way.
 
 ### Chrona (2025) – [chrona-app.com](https://chrona-app.com/)
 
+![Chrona UI](docs/images/img_12-Chrona_UI.webp)
+
 A free, online animated chart editor for videos. Data is pasted from a spreadsheet (Excel, Google Sheets, CSV) or imported as JSON, then bar chart races, line, area, pie and scatter charts are animated on a keyframe timeline. Videos can be exported up to 4K (MP4, WebM, MKV, MOV), including transparent video for use over footage in editors such as Premiere Pro or DaVinci Resolve. Everything runs in the browser and the data is not uploaded.
 
 **Background:** Animated charts for videos usually mean a lot of manual work in video-editing software, so I built an editor where the chart is driven by a spreadsheet and a keyframe timeline, much like in a video editor. Built with React, Vite, Apache ECharts, GSAP and Tailwind CSS. Video export uses the browser's WebCodecs API (canvas-record) with FFmpeg compiled to WebAssembly, which makes 4K and alpha-channel export possible without a server.
 
 ### Semantic Leap (2025) – [semantic-leap.com](https://semantic-leap.com/)
+
+![Semantic Leap UI](docs/images/img_13-Semantic_Leap_UI.webp)
 
 A browser-based word association game. Starting from a given word, the player makes a limited number of "leaps" by typing words and sees how semantically close each guess is to the goal as a proximity percentage.
 
