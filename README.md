@@ -1,6 +1,26 @@
-# Programming Projects
+# Recent Projects (2025–2026, built with AI assistance)
 
-### AI-imaging app (Kotlin)
+The projects below are newer and were built with the help of AI tools (AI-assisted development). The projects further down this page are older coursework and personal projects from 2022–2024, made before AI coding assistants were part of my workflow.
+
+### Rizztikko (2026) – [rizztikko.fi](https://rizztikko.fi)
+
+A free daily mini crossword in Finnish. A new puzzle is published every morning, no registration is needed, and it works on both phones and computers. Past puzzles are available in the archive.
+
+### Chrona (2025) – [chrona-app.com](https://chrona-app.com/)
+
+A free, online animated chart editor for videos. Data is pasted from a spreadsheet (Excel, Google Sheets, CSV) or imported as JSON, then bar chart races, line, area, pie and scatter charts are animated on a keyframe timeline. Videos can be exported up to 4K (MP4, WebM, MKV, MOV), including transparent video for use over footage in editors such as Premiere Pro or DaVinci Resolve. Everything runs in the browser and the data is not uploaded.
+
+### Semantic Leap (2025) – [semantic-leap.com](https://semantic-leap.com/)
+
+A browser-based word association game. Starting from a given word, the player makes a limited number of "leaps" by typing words and sees how semantically close each guess is to the goal as a proximity percentage.
+
+---
+
+# Programming Projects (2022–2023)
+
+*Made before AI coding assistants were part of my workflow.*
+
+### AI-imaging app (Kotlin) – 2023
 
 ![A quick tour of the app UI](docs/images/img_1-Android_app_ui.png)
 
@@ -18,7 +38,7 @@ The implementation of these three parts then took some time. In addition to thes
 The working principle of the application is roughly as follows: When the user clicks on the camera button, the application takes a reference image. The application then compares the images taken at a set interval with this reference image until the similarity of something falls below a set threshold (change_threshold). This change reflects a more radical alteration of the view, for example when a hand moves a character to be animated.  When the view finally changes closer to the reference image, i.e. when the similarity exceeds the image_threshold, a new image is saved as the reference image and in the gallery, and a recyclerView is added. This step represents the removal of the hands from the slightly modified view. Finally, the user can export their image to video.
 
 
-### Snake Game with Graphical User Interface (Qt, C++)
+### Snake Game with Graphical User Interface (Qt, C++) – 2022
 
 
 ![Game Menu](docs/images/img_4-Snake_UI_menu.png)
@@ -40,7 +60,7 @@ This project aimed to enhance a snake game originally implemented with ASCII pri
 - Simple timer.
 
 
-### SANELE - A Wordle Clone (Python)
+### SANELE - A Wordle Clone (Python) – 2022
 
 ![Sanele UI](docs/images/img_5-Sanele_UI.png)
 
@@ -63,7 +83,7 @@ Workflow:
 4. `self.letter_colorer` displays and colors the letters on the screen using a for loop.
 
 
-# UI/UX-Design
+# UI/UX-Design (2023)
 
 ### A Proposal for Eduix-homepage
 
@@ -81,7 +101,7 @@ In my recent role at Eduix, I crafted this UI prototype with Figma, showcasing a
 
 This smaller demo, crafted at Eduix, reimagines the contemporary aesthetic of Eduplan Ella. A vibrant gradient background fosters a modern ambiance, complemented by lively 3D-icons.(1)
 
-# Logo Design
+# Logo Design (2023)
 
 ### Aimoa
 
