@@ -1,4 +1,4 @@
-# Recent Projects (2025–2026, built with AI assistance)
+# Recent Projects (2025–2026)
 
 The projects below are newer and were built with the help of AI tools (AI-assisted development). The projects further down this page are older coursework and personal projects from 2022–2024, made before AI coding assistants were part of my workflow.
 
